@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>TRIVIA</title>
+
+  <link href="./style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+ <header>
+     <h1> TRIVIA TIME </h1>
+    <div>
+      <P>Juego de capitales</P>
+    </div> 
+    <section>
+      <div>
+      <input class="containHolder" type="text" onfocusout="getName()" name="nombre" id="nombre" placeholder=" ¿Como te llamas?">
+    <br>
+    <button class="buttonStart" onClick="mostrarContainer()" type="submit"> Iniciar Juego</button>
+    </section> 
+  </header>
+    <div class="container" id="containerBody">
+     <h2 id="hiName" >Hola!</h2>
+    <form id="id_formulario" >
+    <section id="form1">
+      <img class="img" src="img/coliseo-roma_a835d7d2_768x432.jpeg" width="350" height="160">
+      <h3>1.- Cual es la capital de italia?</h3>
+      <label class="turin">
+        <input type="radio" value="1" name="form1" onclick="verifyAnswer('turin')"> Turin
+      </label>
+      <label class="napoles">
+        <input id="" type="radio" value="2" name="form1"" onclick=" verifyAnswer('napoles')"> Napoles
+      </label>
+      <label class="roma">
+        <input id="romaCity" type="radio" value="3" name="form1" onclick="verifyAnswer('roma')"> Roma
+      </label>
+    </section>
+    
+    <section id="form2">
+      <img src="img/barrio-de-akihabara-en-tokio.jpeg" width="350" height="160">
+      <h3>2.-Cual es la capital de Japón?</h3>
+      <label class="kyoto">
+        <input type="radio" value="1" name="form2" onclick="verifyAnswer2('kyoto')"> Kyoto
+      </label>
+      <label class="tokyo">
+        <input type="radio" value="3" name="form2" onclick="verifyAnswer2('tokyo')"> Tokyo
+      </label>
+      <label class="osaka">
+        <input type="radio" value="2" name="form2" onclick="verifyAnswer2('osaka')"> Osaka
+      </label>
+    </section>
+
+    <section id="form3">
+      <img class="img" src="img/s.jpg" width="350" height="160">
+      <h3>1.- Cual es la capital de Inglaterra?</h3>
+      <label class="londres">
+        <input type="radio" value="1" name="form1" onclick="verifyAnswer3('londres')"> Londres
+      </label>
+      <label class="manchester">
+        <input id="" type="radio" value="2" name="form1"" onclick=" verifyAnswer3('manchester')"> Manchester
+      </label>
+      <label class="leicester">
+        <input  type="radio" value="3" name="form1" onclick="verifyAnswer3('leicester')"> Leicester
+      </label>
+    </section>
+    </form>
+    <button class="results" onclick="verifyAnswer4('results')">
+      “Responder y ver resultados” </button>
+    <br>
+     <button type="button"  onclick="reiniciar()"> Reiniciar </button>
+</button>
+    <br>
+    <button  onclick="salir()" >Salir del Juego</button>
+    </div>
+
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
+</html>
